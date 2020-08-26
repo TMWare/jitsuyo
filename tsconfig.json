@@ -2,10 +2,7 @@
   "compileOnSave": false,
   "extends": "@tmuniversal/ts/config",
   "compilerOptions": {
-    "outDir": "./dist",
-    "inlineSources": false,
-    "inlineSourceMap": false,
-    "removeComments": true
+    "outDir": "./dist"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

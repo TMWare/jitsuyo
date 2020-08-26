@@ -1,19 +1,44 @@
+/* eslint-disable no-useless-escape */
+
+/**
+ * Validators for various strings
+ */
 class Validators {
-  // eslint-disable-next-line no-useless-escape
+  /**
+   * RegExp for URL validation
+   */
   public urlRegex: RegExp = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-z]{1,24}\/([-a-zA-Z0-9()@:%._\+~#?&//=]*)$/m
+  /**
+   * RegExp for Discord emoji name validation
+   */
   public emojiRegex: RegExp = /^[\w]{2,32}$/m
   private invalidName: string = 'invalid_name'
 
+  /**
+   * Validate a URL
+   * @param {String} url URL to validate
+   * @returns {Boolean} wether the given string is a valid url
+   */
   public isUrl (url: string): boolean {
     if (!url) return false
     return this.urlRegex.test(url)
   }
 
+  /**
+   * Validate an emoji name
+   * @param {String} name name to validate
+   * @returns {Boolean} wether the given string is a valid name for discord emojis
+   */
   public isValidEmojiName (name: string): boolean {
     if (!name) return false
     return this.emojiRegex.test(name)
   }
 
+  /**
+   * Get a name that's valid for discord emojis
+   * @param {String} name name to try
+   * @returns {String | "invalid_name"} The filtered name or a substitute
+   */
   public getValidEmojiName (name: string): string {
     if (!name) return this.invalidName
     // Filter disallowed characters

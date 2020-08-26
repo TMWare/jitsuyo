@@ -2,8 +2,8 @@
   "name": "@tmware/status-rotate",
   "version": "0.0.0",
   "description": "Parse in-string variables",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "typings/index.d.ts",
   "scripts": {
     "commit": "npx git-cz",
     "build": "npm run clean && tsc -p ./",

@@ -1,11 +1,12 @@
-/// <reference path="../index.d.ts" />
+/// <reference path="../typings/index.d.ts" />
 
 import Validators from './Validators'
 
-const utils = {
-  validators: Validators
+/**
+ * All utility packaged
+ */
+class Util {
+  public validators = Validators
 }
 
-export = utils
-
-module.exports.default = utils
+export = new Util()
