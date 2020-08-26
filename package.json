@@ -1,5 +1,5 @@
 {
-  "name": "@tmware/status-rotate",
+  "name": "@tmware/util",
   "version": "1.0.0",
   "description": "Parse in-string variables",
   "main": "dist/index.js",
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TMWare/status-rotate.git"
+    "url": "git+https://github.com/TMWare/util.git"
   },
   "author": "TMUniversal <me@tmuniversal.eu>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TMWare/status-rotate/issues"
+    "url": "https://github.com/TMWare/util/issues"
   },
-  "homepage": "https://github.com/TMWare/status-rotate#readme",
+  "homepage": "https://github.com/TMWare/util#readme",
   "dependencies": {},
   "devDependencies": {
     "@tmuniversal/ts": "^1.0.3",
