@@ -1,9 +1,9 @@
 {
-  "name": "@tmware/util",
+  "name": "@tmware/jitsuyo",
   "version": "1.0.1",
   "description": "Parse in-string variables",
-  "main": "dist/index.js",
-  "types": "typings/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "commit": "npx git-cz",
     "build": "npm run clean && tsc -p ./",
@@ -17,14 +17,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TMWare/util.git"
+    "url": "git+https://github.com/TMWare/jitsuyo.git"
   },
   "author": "TMUniversal <me@tmuniversal.eu>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TMWare/util/issues"
+    "url": "https://github.com/TMWare/jitsuyo/issues"
   },
-  "homepage": "https://github.com/TMWare/util#readme",
+  "homepage": "https://github.com/TMWare/jitsuyo#readme",
   "dependencies": {},
   "devDependencies": {
     "@tmuniversal/ts": "^1.0.3",
