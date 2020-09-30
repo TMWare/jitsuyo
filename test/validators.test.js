@@ -37,7 +37,9 @@ describe('emoji name validator', () => {
 
   test('.getValidEmojiName should return "invalid_name" when the name does not meet length requirements', () => {
     const tooShort = util.validators.getValidEmojiName('a')
-    const tooLong = util.validators.getValidEmojiName('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa')
+    const tooLong = util.validators.getValidEmojiName(
+      'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+    )
     expect(tooShort).toBe('invalid_name')
     expect(tooLong).toBe('invalid_name')
   })

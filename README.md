@@ -42,7 +42,6 @@ With yarn: `yarn add @tmware/jitsuyo`
 
 ### Usage
 
-
 ### More advanced examples
 
 ## License
