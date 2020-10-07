@@ -55,13 +55,13 @@ interface StringHelper {
    * @param {String} input String to escape special characters from
    * @returns {String} the escaped string
    */
-  escapeString (input: string): string
+  escapeString(input: string): string
   /**
    * Eliminate all but word characters
    * @param {String} input input string
    * @returns {String} string with only word characters
    */
-  eliminateSpecial (input: string): string
+  eliminateSpecial(input: string): string
 }
 
 interface Jitsuyo {

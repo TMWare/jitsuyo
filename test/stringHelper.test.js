@@ -2,7 +2,9 @@ const util = require('../dist/index')
 
 describe('character escaping', () => {
   test('.escapeString should replace invisible white-space characters with regular spaces', () => {
-    const res = util.stringHelper.escapeString('\u0000\u000a\u000d\u200a\u200b\u200c')
+    const res = util.stringHelper.escapeString(
+      '\u0000\u000a\u000d\u200a\u200b\u200c'
+    )
     expect(res).toBe('      ')
   })
 
@@ -11,14 +13,20 @@ describe('character escaping', () => {
   })
 
   test('.escapeString should escape non-letter characters', () => {
-    const res = util.stringHelper.escapeString(',./;\'[]\\-=<>?:"{}|_+!@#$%^&*()`~')
-    expect(res).toBe('\\,\\.\\/\\;\\\'\\[\\]\\\\\\-\\=\\<\\>\\?\\:\\"\\{\\}\\|\\_\\+\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\`\\~')
+    const res = util.stringHelper.escapeString(
+      ',./;\'[]\\-=<>?:"{}|_+!@#$%^&*()`~'
+    )
+    expect(res).toBe(
+      '\\,\\.\\/\\;\\\'\\[\\]\\\\\\-\\=\\<\\>\\?\\:\\"\\{\\}\\|\\_\\+\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\`\\~'
+    )
   })
 })
 
 describe('character elimination', () => {
   test('.eliminateSpecial should leave only [a-zA-Z0-9_] alive', () => {
-    const res = util.stringHelper.eliminateSpecial('\u0000\u000a\u000d\u200a\u200b\u200chello WORLD1_')
+    const res = util.stringHelper.eliminateSpecial(
+      '\u0000\u000a\u000d\u200a\u200b\u200chello WORLD1_'
+    )
     expect(res).toBe('helloWORLD1_')
   })
 
@@ -27,7 +35,9 @@ describe('character elimination', () => {
   })
 
   test('.eliminateSpecial should leave no special characters except _', () => {
-    const res = util.stringHelper.eliminateSpecial(',./;\'[]\\-=<>?:"{}|_+!@#$%^&*()`~')
+    const res = util.stringHelper.eliminateSpecial(
+      ',./;\'[]\\-=<>?:"{}|_+!@#$%^&*()`~'
+    )
     expect(res).toBe('_')
   })
 })
