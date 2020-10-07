@@ -31,8 +31,13 @@ interface Validators {
   getValidEmojiName(name: string): string
 }
 
+interface ArrayHelper {
+  checkOverlap(given: Array<any>, required: Array<any>): boolean
+}
+
 interface Jitsuyo {
   validators: Validators
+  arrayHelper: ArrayHelper
 }
 
 /**
