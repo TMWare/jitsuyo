@@ -41,3 +41,42 @@ describe('character elimination', () => {
     expect(res).toBe('_')
   })
 })
+
+expect.extend({
+  arrayElementsStartWith(received, startWithA, startWithB) {
+    const pass = received.every(
+      e => e.startsWith(startWithA) || e.startsWith(startWithB)
+    )
+    if (pass) {
+      return {
+        message: () =>
+          `expected ${received} not to start with either ${startWithA} or ${startWithB}`,
+        pass: true
+      }
+    } else {
+      return {
+        message: () =>
+          `expected ${received} to start with either ${startWithA} or ${startWithB}`,
+        pass: false
+      }
+    }
+  }
+})
+
+describe('acronym resolving', () => {
+  test('.resolveAcronym results should never include special characters aside from regular whitespace', () => {
+    const res = util.stringHelper.resolveAcronym(
+      '\u0000\u000a\u000d\u200a\u200b\u200c'
+    )
+    expect(res).toBe('')
+  })
+
+  test('.resolveAcronym should resolve characters to words starting with the original characters', () => {
+    const res = util.stringHelper.resolveAcronym('AB')
+    expect(res.split(' ')).arrayElementsStartWith('A', 'B')
+  })
+
+  test('.resolveAcronym should return an empty string when no input is passed', () => {
+    expect(util.stringHelper.resolveAcronym()).toBe('')
+  })
+})

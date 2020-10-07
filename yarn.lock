@@ -771,6 +771,11 @@ acorn@^7.1.1, acorn@^7.4.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
+acronymresolver@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/acronymresolver/-/acronymresolver-1.1.1.tgz#a6d5d936ad5f7928122e3c76484b357fbfb8393b"
+  integrity sha512-douMA0nc5aWQ/gVi1mHhnODdGMhD8XecGXiw5ylw+GjTJ6jB9aWSj6oQOjuKqR65owzDe9+XIX16qpDu1c2wAw==
+
 ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4:
   version "6.12.5"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.5.tgz#19b0e8bae8f476e5ba666300387775fb1a00a4da"

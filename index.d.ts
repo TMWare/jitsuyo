@@ -62,6 +62,14 @@ interface StringHelper {
    * @returns {String} string with only word characters
    */
   eliminateSpecial(input: string): string
+  /**
+   * Randomly resolve an acronym
+   * @param {String} acronym an acronym (i.e. ABC which usually stands for American Broadcasting Company)
+   * @returns {String} randomly resolver acronym
+   * @example resolveAcronym('ABC')
+   * // => 'Apartment Backing Consult'
+   */
+  resolveAcronym(acronym: string): string
 }
 
 interface Jitsuyo {

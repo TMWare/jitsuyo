@@ -24,7 +24,9 @@
     "url": "https://github.com/TMWare/jitsuyo/issues"
   },
   "homepage": "https://github.com/TMWare/jitsuyo#readme",
-  "dependencies": {},
+  "dependencies": {
+    "acronymresolver": "^1.1.1"
+  },
   "devDependencies": {
     "@tmuniversal/ts": "^1.1.0",
     "@tmware/eslint-config": "^1.0.0",

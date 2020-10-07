@@ -1,3 +1,5 @@
+const acronymRes = require('acronymresolver')
+
 const spacingAndControl = /[\p{C}\p{Z}]/gu
 const nonLetter = /([^\p{L}\p{Nd} ])/gu
 
@@ -25,4 +27,15 @@ export function eliminateSpecial (input: string): string {
   return input.replace(/[^\w]/g, '')
 }
 
-export default { escapeString, eliminateSpecial }
+/**
+ * Randomly resolve an acronym
+ * @param {String} acronym an acronym (i.e. ABC which usually stands for American Broadcasting Company)
+ * @returns {String} randomly resolver acronym
+ * @example resolveAcronym('ABC')
+ * // => 'Apartment Backing Consult'
+ */
+export function resolveAcronym (acronym: string): string {
+  return acronymRes(eliminateSpecial(acronym).replace(/_/g, ''))
+}
+
+export default { escapeString, eliminateSpecial, resolveAcronym }
