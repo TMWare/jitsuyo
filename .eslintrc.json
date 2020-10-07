@@ -1,3 +1,4 @@
 {
-  "extends": "@tmware"
+  "extends": "@tmware",
+  "plugins": ["eslint-plugin-jest"]
 }
