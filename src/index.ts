@@ -2,13 +2,15 @@
 
 import validators from './Validators'
 import arrayHelper from './ArrayHelper'
+import stringHelper from './StringHelper'
 
 /**
  * All utility packaged
  */
 const util = {
   validators,
-  arrayHelper
+  arrayHelper,
+  stringHelper
 }
 
 module.exports = util

@@ -31,13 +31,43 @@ interface Validators {
   getValidEmojiName(name: string): string
 }
 
+/**
+ * Functions that handle arrays
+ */
 interface ArrayHelper {
+  /**
+   * Check wether a *given* array includes all of the elements on *required*.
+   * The *given* array may have more/otherwise different elements.
+   * Intended for permission array overlap testing.
+   * @param {Array} given An array to be tested against required
+   * @param {Array} required An array that contains all elements that must be present on given
+   * @return {Boolean} wether given includes all elements of required
+   */
   checkOverlap(given: Array<any>, required: Array<any>): boolean
+}
+
+/**
+ * Functions that handle strings
+ */
+interface StringHelper {
+  /**
+   * Escape special characters from a string
+   * @param {String} input String to escape special characters from
+   * @returns {String} the escaped string
+   */
+  escapeString (input: string): string
+  /**
+   * Eliminate all but word characters
+   * @param {String} input input string
+   * @returns {String} string with only word characters
+   */
+  eliminateSpecial (input: string): string
 }
 
 interface Jitsuyo {
   validators: Validators
   arrayHelper: ArrayHelper
+  stringHelper: StringHelper
 }
 
 /**
