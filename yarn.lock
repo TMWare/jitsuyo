@@ -747,9 +747,9 @@ acorn@^7.1.1, acorn@^7.4.0:
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
 acronymresolver@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/acronymresolver/-/acronymresolver-1.1.1.tgz#a6d5d936ad5f7928122e3c76484b357fbfb8393b"
-  integrity sha512-douMA0nc5aWQ/gVi1mHhnODdGMhD8XecGXiw5ylw+GjTJ6jB9aWSj6oQOjuKqR65owzDe9+XIX16qpDu1c2wAw==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/acronymresolver/-/acronymresolver-1.1.2.tgz#dcf574dd447038b732395ddcbbf94fe31bd53357"
+  integrity sha512-F4/u28XtC50iR2rNcKa3Eb9H14XmUdE7T0oQRt1uJ7HaHz403fiLE0GxlSdo+YfuEsiC9kN20p2V9UH/fRGyhQ==
 
 ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.3, ajv@^6.12.4:
   version "6.12.6"
