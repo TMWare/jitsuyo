@@ -1,3 +1,4 @@
+const { appendFile } = require('fs')
 const util = require('../dist/index')
 
 describe('array overlap', () => {
@@ -23,9 +24,29 @@ describe('array overlap', () => {
   })
 
   test('.checkOverlap should return true when required is empty', () => {
-    const given = []
+    const given = [2]
     const required = []
     const res = util.arrayHelper.checkOverlap(given, required)
     expect(res).toBe(true)
+  })
+})
+
+describe('pickRandom', () => {
+  test('.pickRandom should return undefined when no array / an empty one is provided', () => {
+    const given2 = []
+    const res1 = util.arrayHelper.pickRandom()
+    const res2 = util.arrayHelper.pickRandom(given2)
+    expect(res1).toBeUndefined()
+    expect(res2).toBeUndefined()
+  })
+
+  test('.pickRandom should return the only element of a one-element array', () => {
+    const given = ['Apples']
+    expect(util.arrayHelper.pickRandom(given)).toBe('Apples')
+  })
+
+  test('.pickRandom should return one element of those given', () => {
+    const given = ['Apple', 'Banana', 'Cherry']
+    expect(util.arrayHelper.pickRandom(given)).toEqual(expect.stringMatching(/^(Apple)|(Banana)|(Cherry)/))
   })
 })

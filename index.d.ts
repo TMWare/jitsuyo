@@ -44,6 +44,12 @@ interface ArrayHelper {
    * @return {Boolean} wether given includes all elements of required
    */
   checkOverlap(given: Array<any>, required: Array<any>): boolean
+  /**
+   * Pick one random element out of an array and return it.
+   * @param {Array<T>} array Arbitrary Array
+   * @returns {T} the selected element
+   */
+  pickRandom<T> (array: T[]): T
 }
 
 /**

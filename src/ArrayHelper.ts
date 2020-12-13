@@ -11,4 +11,16 @@ export function checkOverlap (given: Array<any>, required: Array<any>): boolean 
   return required.every(e => given.includes(e))
 }
 
-export default { checkOverlap }
+/**
+ * Pick one random element out of an array and return it.
+ * @param {Array<T>} array Arbitrary Array
+ * @returns {T} the selected element
+ */
+export function pickRandom<T> (array: T[]): T {
+  if (!array) return
+  else if (array.length === 1) return array[0]
+
+  return array[Math.floor(Math.random() * array.length)]
+}
+
+export default { checkOverlap, pickRandom }
