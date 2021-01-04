@@ -1,4 +1,3 @@
-const { appendFile } = require('fs')
 const util = require('../dist/index')
 
 describe('array overlap', () => {
