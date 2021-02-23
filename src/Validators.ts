@@ -12,7 +12,7 @@ class Validators {
    * RegExp for Discord emoji name validation
    */
   public emojiRegex: RegExp = /^[\w]{2,32}$/m
-  private invalidName: string = 'invalid_name'
+  private readonly invalidName: string = 'invalid_name'
 
   /**
    * Validate a URL

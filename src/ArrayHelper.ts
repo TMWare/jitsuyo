@@ -6,7 +6,7 @@
  * @param {Array} required An array that contains all elements that must be present on given
  * @return {Boolean} wether given includes all elements of required
  */
-export function checkOverlap (given: Array<any>, required: Array<any>): boolean {
+export function checkOverlap (given: any[], required: any[]): boolean {
   if (!required) return true
   return required.every(e => given.includes(e))
 }

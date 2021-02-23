@@ -3,9 +3,12 @@
   "extends": "@tmuniversal/ts/config",
   "compilerOptions": {
     "outDir": "./dist",
+    "target": "ESNEXT",
+    "lib": ["ESNext"],
+    "strictNullChecks": true,
     "inlineSourceMap": false,
     "inlineSources": false,
-    "esModuleInterop": false
+    "esModuleInterop": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

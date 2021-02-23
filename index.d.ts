@@ -76,6 +76,14 @@ interface StringHelper {
    * // => 'Apartment Backing Consult'
    */
   resolveAcronym(acronym: string): string
+  /**
+   * Capitalize the first letter of a string
+   * @param {String} string an input string
+   * @returns {String} string with first letter capitalized
+   * @example capitalizeFirstLetter('abc')
+   * // => Abc
+   */
+  capitalizeFirstLetter (string: string): string
 }
 
 interface Jitsuyo {
