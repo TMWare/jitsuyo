@@ -2,9 +2,7 @@ const util = require('../dist/index')
 
 describe('character escaping', () => {
   test('.escapeString should replace invisible white-space characters with regular spaces', () => {
-    const res = util.stringHelper.escapeString(
-      '\u0000\u000a\u000d\u200a\u200b\u200c'
-    )
+    const res = util.stringHelper.escapeString('\u0000\u000a\u000d\u200a\u200b\u200c')
     expect(res).toBe('      ')
   })
 
@@ -13,9 +11,7 @@ describe('character escaping', () => {
   })
 
   test('.escapeString should escape non-letter characters', () => {
-    const res = util.stringHelper.escapeString(
-      ',./;\'[]\\-=<>?:"{}|_+!@#$%^&*()`~'
-    )
+    const res = util.stringHelper.escapeString(',./;\'[]\\-=<>?:"{}|_+!@#$%^&*()`~')
     expect(res).toBe(
       '\\,\\.\\/\\;\\\'\\[\\]\\\\\\-\\=\\<\\>\\?\\:\\"\\{\\}\\|\\_\\+\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\`\\~'
     )
@@ -24,9 +20,7 @@ describe('character escaping', () => {
 
 describe('character elimination', () => {
   test('.eliminateSpecial should leave only [a-zA-Z0-9_] alive', () => {
-    const res = util.stringHelper.eliminateSpecial(
-      '\u0000\u000a\u000d\u200a\u200b\u200chello WORLD1_'
-    )
+    const res = util.stringHelper.eliminateSpecial('\u0000\u000a\u000d\u200a\u200b\u200chello WORLD1_')
     expect(res).toBe('helloWORLD1_')
   })
 
@@ -35,28 +29,22 @@ describe('character elimination', () => {
   })
 
   test('.eliminateSpecial should leave no special characters except _', () => {
-    const res = util.stringHelper.eliminateSpecial(
-      ',./;\'[]\\-=<>?:"{}|_+!@#$%^&*()`~'
-    )
+    const res = util.stringHelper.eliminateSpecial(',./;\'[]\\-=<>?:"{}|_+!@#$%^&*()`~')
     expect(res).toBe('_')
   })
 })
 
 expect.extend({
   arrayElementsStartWith(received, startWithA, startWithB) {
-    const pass = received.every(
-      e => e.startsWith(startWithA) || e.startsWith(startWithB)
-    )
+    const pass = received.every(e => e.startsWith(startWithA) || e.startsWith(startWithB))
     if (pass) {
       return {
-        message: () =>
-          `expected ${received} not to start with either ${startWithA} or ${startWithB}`,
+        message: () => `expected ${received} not to start with either ${startWithA} or ${startWithB}`,
         pass: true
       }
     } else {
       return {
-        message: () =>
-          `expected ${received} to start with either ${startWithA} or ${startWithB}`,
+        message: () => `expected ${received} to start with either ${startWithA} or ${startWithB}`,
         pass: false
       }
     }
@@ -65,9 +53,7 @@ expect.extend({
 
 describe('acronym resolving', () => {
   test('.resolveAcronym results should never include special characters aside from regular whitespace', () => {
-    const res = util.stringHelper.resolveAcronym(
-      '\u0000\u000a\u000d\u200a\u200b\u200c'
-    )
+    const res = util.stringHelper.resolveAcronym('\u0000\u000a\u000d\u200a\u200b\u200c')
     expect(res).toBe('')
   })
 
@@ -89,5 +75,4 @@ describe('string capitalization', () => {
     expect(util.stringHelper.capitalizeFirstLetter(' ab')).toBe(' ab')
     expect(util.stringHelper.capitalizeFirstLetter('/ab')).toBe('/ab')
   })
-
 })

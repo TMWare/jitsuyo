@@ -16,19 +16,19 @@ interface Validators {
    * @param {String} url URL to validate
    * @returns {Boolean} wether the given string is a valid url
    */
-  isUrl(url: string): boolean
+  isUrl: (url: string) => boolean
   /**
    * Validate an emoji name
    * @param {String} name name to validate
    * @returns {Boolean} wether the given string is a valid name for discord emojis
    */
-  isValidEmojiName(name: string): boolean
+  isValidEmojiName: (name: string) => boolean
   /**
    * Get a name that's valid for discord emojis
    * @param {String} name name to try
    * @returns {String | "invalid_name"} The filtered name or a substitute
    */
-  getValidEmojiName(name: string): string
+  getValidEmojiName: (name: string) => string
 }
 
 /**
@@ -43,13 +43,13 @@ interface ArrayHelper {
    * @param {Array} required An array that contains all elements that must be present on given
    * @return {Boolean} wether given includes all elements of required
    */
-  checkOverlap(given: Array<any>, required: Array<any>): boolean
+  checkOverlap: (given: any[], required: any[]) => boolean
   /**
    * Pick one random element out of an array and return it.
    * @param {Array<T>} array Arbitrary Array
    * @returns {T} the selected element
    */
-  pickRandom<T> (array: T[]): T
+  pickRandom: <T>(array: T[]) => T
 }
 
 /**
@@ -61,13 +61,13 @@ interface StringHelper {
    * @param {String} input String to escape special characters from
    * @returns {String} the escaped string
    */
-  escapeString(input: string): string
+  escapeString: (input: string) => string
   /**
    * Eliminate all but word characters
    * @param {String} input input string
    * @returns {String} string with only word characters
    */
-  eliminateSpecial(input: string): string
+  eliminateSpecial: (input: string) => string
   /**
    * Randomly resolve an acronym
    * @param {String} acronym an acronym (i.e. ABC which usually stands for American Broadcasting Company)
@@ -75,7 +75,7 @@ interface StringHelper {
    * @example resolveAcronym('ABC')
    * // => 'Apartment Backing Consult'
    */
-  resolveAcronym(acronym: string): string
+  resolveAcronym: (acronym: string) => string
   /**
    * Capitalize the first letter of a string
    * @param {String} string an input string
@@ -83,7 +83,7 @@ interface StringHelper {
    * @example capitalizeFirstLetter('abc')
    * // => Abc
    */
-  capitalizeFirstLetter (string: string): string
+  capitalizeFirstLetter: (string: string) => string
 }
 
 interface Jitsuyo {
