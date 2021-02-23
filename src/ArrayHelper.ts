@@ -17,7 +17,7 @@ export function checkOverlap (given: any[], required: any[]): boolean {
  * @returns {T} the selected element
  */
 export function pickRandom<T> (array: T[]): T {
-  if (!Array.isArray(array) || array.length < 1) throw new Error('expected an array of at least one element')
+  if (!array) return
   else if (array.length === 1) return array[0]
 
   return array[Math.floor(Math.random() * array.length)]
