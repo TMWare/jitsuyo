@@ -1,4 +1,4 @@
-const acronymRes = require('acronymresolver')
+import acronymRes from 'acronymresolver'
 
 const spacingAndControl = /[\p{C}\p{Z}]/gu
 const nonLetter = /([^\p{L}\p{Nd} ])/gu
@@ -38,4 +38,15 @@ export function resolveAcronym (acronym: string): string {
   return acronymRes(eliminateSpecial(acronym).replace(/_/g, ''))
 }
 
-export default { escapeString, eliminateSpecial, resolveAcronym }
+/**
+ * Capitalize the first letter of a string
+ * @param {String} string an input string
+ * @returns {String} string with first letter capitalized
+ * @example capitalizeFirstLetter('abc')
+ * // => Abc
+ */
+export function capitalizeFirstLetter (string: string): string {
+  return string.charAt(0).toUpperCase() + string.slice(1)
+}
+
+export default { escapeString, eliminateSpecial, resolveAcronym, capitalizeFirstLetter }
