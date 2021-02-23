@@ -23,7 +23,7 @@
     "preversion": "yarn run build && yarn test",
     "prepublishOnly": "pinst --disable && yarn run build && yarn test",
     "postpublish": "pinst --enable",
-    "postversion": "git push && git push --tags",
+    "postversion": "git push --all --follow-tags",
     "postinstall": "husky install"
   },
   "repository": {
