@@ -46,10 +46,12 @@ interface ArrayHelper {
   checkOverlap: (given: any[], required: any[]) => boolean
   /**
    * Pick one random element out of an array and return it.
+   *
+   * Will return undefined when the array has no elements
    * @param {Array<T>} array Arbitrary Array
    * @returns {T} the selected element
    */
-  pickRandom: <T>(array: T[]) => T
+  pickRandom: <T>(array: T[]) => T | undefined
 }
 
 /**

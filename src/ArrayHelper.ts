@@ -13,11 +13,13 @@ export function checkOverlap (given: any[], required: any[]): boolean {
 
 /**
  * Pick one random element out of an array and return it.
+ *
+ * Will return undefined when the array has no elements
  * @param {Array<T>} array Arbitrary Array
  * @returns {T} the selected element
  */
-export function pickRandom<T> (array: T[]): T {
-  if (!array) return
+export function pickRandom<T> (array: T[]): T | undefined {
+  if (!Array.isArray(array) || !array) return
   else if (array.length === 1) return array[0]
 
   return array[Math.floor(Math.random() * array.length)]
