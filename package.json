@@ -24,11 +24,12 @@
     "prepublishOnly": "pinst --disable && yarn run build && yarn test",
     "postpublish": "pinst --enable",
     "postversion": "git push --all --follow-tags",
-    "postinstall": "husky install"
+    "postinstall": "husky install",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TMWare/jitsuyo.git"
+    "url": "https://github.com/TMWare/jitsuyo.git"
   },
   "author": "TMUniversal <me@tmuniversal.eu>",
   "license": "MIT",
@@ -58,20 +59,15 @@
     "@tmware/eslint-config": "^1.1.2",
     "@tmware/eslint-config-typescript": "^1.0.5",
     "@tmware/prettier-config": "^1.0.3",
-    "@types/node": "^14.14.31",
-    "eslint": "^7.20.0",
-    "eslint-plugin-jest": "^24.1.5",
-    "husky": "^5.1.1",
+    "@types/node": "^14.14.35",
+    "eslint": "^7.22.0",
+    "eslint-plugin-jest": "^24.3.2",
+    "husky": "^5.2.0",
     "jest": "^26.6.3",
     "pinst": "^2.1.6",
     "rimraf": "^3.0.2",
-    "typescript": "^4.1.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run lint:fix && yarn run lint",
-      "pre-push": "yarn run test"
-    }
+    "semantic-release": "^17.4.2",
+    "typescript": "^4.2.3"
   },
   "keywords": [],
   "prettier": "@tmware/prettier-config"
