@@ -69,7 +69,10 @@ describe('acronym resolving', () => {
 
 describe('string capitalization', () => {
   test('.capitalizeFirstLetter should capitalize the first letter', () => {
-    expect(util.stringHelper.capitalizeFirstLetter('abc')).toBe('Abc')
+    expect(util.stringHelper.capitalizeFirstLetter('abc def')).toBe('Abc def')
+  })
+  test('.capitalizeFirstLetter should not lowercase', () => {
+    expect(util.stringHelper.capitalizeFirstLetter('ABC DEF')).toBe('ABC DEF')
   })
   test('.capitalizeFirstLetter should only capitalize word characters', () => {
     expect(util.stringHelper.capitalizeFirstLetter(' ab')).toBe(' ab')
