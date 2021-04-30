@@ -78,4 +78,14 @@ describe('string capitalization', () => {
     expect(util.stringHelper.capitalizeFirstLetter(' ab')).toBe(' ab')
     expect(util.stringHelper.capitalizeFirstLetter('/ab')).toBe('/ab')
   })
+
+  test('.capitalize should capitalize the first letter of every word', () => {
+    expect(util.stringHelper.capitalize('abc def')).toBe('Abc Def')
+  })
+  test('.capitalize should accept custom separators', () => {
+    expect(util.stringHelper.capitalize('abc_def', '_')).toBe('Abc_Def')
+  })
+  test('.capitalize should not lowercase', () => {
+    expect(util.stringHelper.capitalize('ABC DEF')).toBe('ABC DEF')
+  })
 })
