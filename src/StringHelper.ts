@@ -1,4 +1,15 @@
-import acronymRes from 'acronymresolver'
+interface Optionals {
+  acronymRes: (arg: string) => string
+}
+
+const optionals: Optionals = {} as Optionals
+
+try {
+  optionals.acronymRes = require('acronymresolver')
+}
+catch {
+  optionals.acronymRes = null as any
+}
 
 const spacingAndControl = /[\p{C}\p{Z}]/gu
 const nonLetter = /([^\p{L}\p{Nd} ])/gu
@@ -35,7 +46,8 @@ export function eliminateSpecial (input: string): string {
  * // => 'Apartment Backing Consult'
  */
 export function resolveAcronym (acronym: string): string {
-  return acronymRes(eliminateSpecial(acronym).replace(/_/g, ''))
+  if (!optionals.acronymRes || optionals.acronymRes == null) throw new Error('optional peer dependency `acronymresolver` is needed for this')
+  return optionals.acronymRes(eliminateSpecial(acronym).replace(/_/g, ''))
 }
 
 /**
