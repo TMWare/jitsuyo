@@ -2,12 +2,15 @@ interface Optionals {
   acronymRes: (arg: string) => string
 }
 
-const optionals: Optionals = {} as Optionals
+// eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+const optionals = {} as Optionals
 
 try {
-  optionals.acronymRes = require('acronymresolver')
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  optionals.acronymRes = require('acronymresolver') as Optionals['acronymRes']
 }
 catch {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   optionals.acronymRes = null as any
 }
 
