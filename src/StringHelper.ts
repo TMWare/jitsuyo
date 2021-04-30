@@ -1,4 +1,18 @@
-import acronymRes from 'acronymresolver'
+interface Optionals {
+  acronymRes: (arg: string) => string
+}
+
+// eslint-disable-next-line @typescript-eslint/consistent-type-assertions
+const optionals = {} as Optionals
+
+try {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  optionals.acronymRes = require('acronymresolver') as Optionals['acronymRes']
+}
+catch {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  optionals.acronymRes = null as any
+}
 
 const spacingAndControl = /[\p{C}\p{Z}]/gu
 const nonLetter = /([^\p{L}\p{Nd} ])/gu
@@ -35,7 +49,8 @@ export function eliminateSpecial (input: string): string {
  * // => 'Apartment Backing Consult'
  */
 export function resolveAcronym (acronym: string): string {
-  return acronymRes(eliminateSpecial(acronym).replace(/_/g, ''))
+  if (!optionals.acronymRes || optionals.acronymRes == null) throw new Error('optional peer dependency `acronymresolver` is needed for this')
+  return optionals.acronymRes(eliminateSpecial(acronym).replace(/_/g, ''))
 }
 
 /**
