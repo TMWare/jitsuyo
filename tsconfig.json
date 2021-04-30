@@ -5,9 +5,9 @@
     "outDir": "./dist",
     "target": "ESNEXT",
     "lib": ["ESNext"],
-    "strictNullChecks": true,
-    "inlineSourceMap": false,
+    "declaration": false,
     "inlineSources": false,
+    "inlineSourceMap": false,
     "esModuleInterop": true
   },
   "include": ["src/**/*"],
