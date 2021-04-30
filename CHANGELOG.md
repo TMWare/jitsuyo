@@ -1,3 +1,31 @@
+# [1.6.0](https://github.com/TMWare/jitsuyo/compare/v1.5.1...v1.6.0) (2021-04-30)
+
+
+### Chores
+
+* **husky:** switch to prepare hook for install ([d82f89c](https://github.com/TMWare/jitsuyo/commit/d82f89cac87b4e2d0603c2a8ab7f3e541f34a191))
+* **merge:** pull request [#71](https://github.com/TMWare/jitsuyo/issues/71) ([10f59ee](https://github.com/TMWare/jitsuyo/commit/10f59eead673eb857394c911df62e798bdb2397b))
+
+
+### Documentation
+
+* **stringHelper:** improve example for `capitalizeFirstLetter` ([3261ba6](https://github.com/TMWare/jitsuyo/commit/3261ba6e6b6a2317034583e1905fcd73a75a865e))
+
+
+### Features
+
+* **stringHelper:** add capitalization function ([7b8ab2c](https://github.com/TMWare/jitsuyo/commit/7b8ab2c454ae19780f3f376072d7c0fe6dc1ab98))
+
+
+### Styles
+
+* apply code formatter ([e243b8c](https://github.com/TMWare/jitsuyo/commit/e243b8cb5bd175b13c96028776df738253cdef10))
+
+
+### Tests
+
+* **stringHelper:** ensure that string capitalization does not lowercase ([f0c990b](https://github.com/TMWare/jitsuyo/commit/f0c990b1ad2fd177f3bd5c90789bdb8a28fab5a3))
+
 ## [1.5.1](https://github.com/TMWare/jitsuyo/compare/v1.5.0...v1.5.1) (2021-04-09)
 
 
