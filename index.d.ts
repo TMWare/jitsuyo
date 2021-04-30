@@ -82,10 +82,22 @@ interface StringHelper {
    * Capitalize the first letter of a string
    * @param {String} string an input string
    * @returns {String} string with first letter capitalized
-   * @example capitalizeFirstLetter('abc')
-   * // => Abc
+   * @example capitalizeFirstLetter('abc def GHI')
+   * // => Abc def GHI
    */
   capitalizeFirstLetter: (string: string) => string
+  /**
+   * Capitalize the first letter of every word in a string
+   * @param {String} string an input string
+   * @param {?String} wordSeparator string to split words by (default: ' ' (space))
+   * @returns {String} string with all words capitalized
+   * @example capitalize('abc def GHI')
+   * // => Abc Def GHI
+   *
+   * @example capitalize('abc_def', '_')
+   * // => Abc_Def
+   */
+  capitalize: (string: string, wordSeparator?: string) => string
 }
 
 interface Jitsuyo {
