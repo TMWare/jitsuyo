@@ -82,8 +82,8 @@ interface StringHelper {
    * Capitalize the first letter of a string
    * @param {String} string an input string
    * @returns {String} string with first letter capitalized
-   * @example capitalizeFirstLetter('abc')
-   * // => Abc
+   * @example capitalizeFirstLetter('abc def GHI')
+   * // => Abc def GHI
    */
   capitalizeFirstLetter: (string: string) => string
 }

@@ -42,8 +42,8 @@ export function resolveAcronym (acronym: string): string {
  * Capitalize the first letter of a string
  * @param {String} string an input string
  * @returns {String} string with first letter capitalized
- * @example capitalizeFirstLetter('abc')
- * // => Abc
+ * @example capitalizeFirstLetter('abc def GHI')
+ * // => Abc def GHI
  */
 export function capitalizeFirstLetter (string: string): string {
   return string.charAt(0).toUpperCase() + string.slice(1)
