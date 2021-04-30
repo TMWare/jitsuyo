@@ -61,7 +61,10 @@ export function capitalizeFirstLetter (string: string): string {
  * // => Abc_Def
  */
 export function capitalize (string: string, wordSeparator: string = ' '): string {
-  return string.split(wordSeparator).map(word => capitalizeFirstLetter(word)).join(wordSeparator)
+  return string
+    .split(wordSeparator)
+    .map(word => capitalizeFirstLetter(word))
+    .join(wordSeparator)
 }
 
 export default { escapeString, eliminateSpecial, resolveAcronym, capitalizeFirstLetter, capitalize }
