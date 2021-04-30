@@ -1,3 +1,19 @@
+## [1.6.1](https://github.com/TMWare/jitsuyo/compare/v1.6.0...v1.6.1) (2021-04-30)
+
+
+### Chores
+
+* make acronymresolver optional ([b6a5fa4](https://github.com/TMWare/jitsuyo/commit/b6a5fa47bbc87dd1d8359e13d16441e6d45d68e6))
+* take care of linting issues ([0575bee](https://github.com/TMWare/jitsuyo/commit/0575bee13a203feb71c6878314bbac9eab780538))
+* **deps-dev:** bump @tmuniversal/ts from 1.1.2 to 1.2.1 ([#65](https://github.com/TMWare/jitsuyo/issues/65)) ([f2e518b](https://github.com/TMWare/jitsuyo/commit/f2e518b7e375dcb775ab6ff5730eeda4b450d465))
+* **deps-dev:** bump @tmware/eslint-config-typescript ([#66](https://github.com/TMWare/jitsuyo/issues/66)) ([9a8d5bb](https://github.com/TMWare/jitsuyo/commit/9a8d5bb40df30ccab234dae77781f66e4ca95315))
+* **deps-dev:** bump @types/node from 14.14.37 to 15.0.1 ([#70](https://github.com/TMWare/jitsuyo/issues/70)) ([16af7db](https://github.com/TMWare/jitsuyo/commit/16af7dbb56533f2fe21eec1673d9d6518867d98d))
+* **deps-dev:** bump eslint from 7.23.0 to 7.25.0 ([#67](https://github.com/TMWare/jitsuyo/issues/67)) ([8c54f80](https://github.com/TMWare/jitsuyo/commit/8c54f804455c07c34c5d852b04196eec5a677d11))
+* **deps-dev:** bump eslint-plugin-jest from 24.3.4 to 24.3.6 ([#68](https://github.com/TMWare/jitsuyo/issues/68)) ([898a5f1](https://github.com/TMWare/jitsuyo/commit/898a5f1eb1502c6ca912a2dce9ffb40d3d136ad9))
+* **dev-deps:** upgrade all dev dependencies ([4024ea6](https://github.com/TMWare/jitsuyo/commit/4024ea699e38655d8a94322240f79c60e16589b4))
+* **pkg:** mark `acronymresolver` as optional ([6699086](https://github.com/TMWare/jitsuyo/commit/669908697cd22a4295a17355a13266d2bb1e9175))
+* **types:** disable declarations export ([3bf6320](https://github.com/TMWare/jitsuyo/commit/3bf6320a5893c4da91374f660167d02bc6f85a61))
+
 # [1.6.0](https://github.com/TMWare/jitsuyo/compare/v1.5.1...v1.6.0) (2021-04-30)
 
 
