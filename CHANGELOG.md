@@ -1,3 +1,11 @@
+## [1.6.3](https://github.com/TMWare/jitsuyo/compare/v1.6.2...v1.6.3) (2021-06-14)
+
+
+### Chores
+
+* **deps:** bump normalize-url from 6.0.0 to 6.0.1 ([#92](https://github.com/TMWare/jitsuyo/issues/92)) ([1e47dd2](https://github.com/TMWare/jitsuyo/commit/1e47dd26791fc713d378f2f93026efec55d55975))
+* **deps:** bump trim-newlines from 3.0.0 to 3.0.1 ([#93](https://github.com/TMWare/jitsuyo/issues/93)) ([5e165ff](https://github.com/TMWare/jitsuyo/commit/5e165ff1019e0eafd7a1835f1a97ea481636fe35))
+
 ## [1.6.2](https://github.com/TMWare/jitsuyo/compare/v1.6.1...v1.6.2) (2021-06-14)
 
 
