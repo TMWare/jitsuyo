@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/TMWare/jitsuyo/compare/v1.6.1...v1.6.2) (2021-06-14)
+
+
+### Chores
+
+* **deps:** bump ws from 7.4.5 to 7.4.6 ([#84](https://github.com/TMWare/jitsuyo/issues/84)) ([23ebf4e](https://github.com/TMWare/jitsuyo/commit/23ebf4e332a14b9704bbee46b76359034e82eb9f))
+
 ## [1.6.1](https://github.com/TMWare/jitsuyo/compare/v1.6.0...v1.6.1) (2021-04-30)
 
 
