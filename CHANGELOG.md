@@ -1,3 +1,42 @@
+## [1.6.4](https://github.com/TMWare/jitsuyo/compare/v1.6.3...v1.6.4) (2021-07-10)
+
+
+### Chores
+
+* **deps:** upgrade all dependencies ([1bc5df9](https://github.com/TMWare/jitsuyo/commit/1bc5df9cabc2253cf0a19a582d16e1d49b35ed54))
+* **deps-dev:** bump @types/node from 15.0.1 to 15.3.1 ([#78](https://github.com/TMWare/jitsuyo/issues/78)) ([22216ae](https://github.com/TMWare/jitsuyo/commit/22216ae94f41bf4739dc7be6208e2a4089d00065))
+* **deps-dev:** bump @types/node from 15.12.2 to 16.3.1 ([#110](https://github.com/TMWare/jitsuyo/issues/110)) ([c1a44b8](https://github.com/TMWare/jitsuyo/commit/c1a44b8a46aa317178bbce6099bee64824a0a38e))
+* **deps-dev:** bump @types/node from 15.3.1 to 15.12.2 ([#91](https://github.com/TMWare/jitsuyo/issues/91)) ([f9a383f](https://github.com/TMWare/jitsuyo/commit/f9a383f25589e938377b64259e2cf9463799f35c))
+* **deps-dev:** bump eslint from 7.25.0 to 7.26.0 ([#74](https://github.com/TMWare/jitsuyo/issues/74)) ([c04ba6c](https://github.com/TMWare/jitsuyo/commit/c04ba6ce9efc2d32baf2bd98a52d571a0e8ff891))
+* **deps-dev:** bump eslint from 7.26.0 to 7.28.0 ([#89](https://github.com/TMWare/jitsuyo/issues/89)) ([fab3524](https://github.com/TMWare/jitsuyo/commit/fab35248840592becca3f28e95324f84fd52609d))
+* **deps-dev:** bump eslint from 7.28.0 to 7.30.0 ([#105](https://github.com/TMWare/jitsuyo/issues/105)) ([5a58913](https://github.com/TMWare/jitsuyo/commit/5a589138f4a0a77d91010023a635224ed2ddcd1b))
+* **deps-dev:** bump husky from 6.0.0 to 7.0.1 ([#107](https://github.com/TMWare/jitsuyo/issues/107)) ([2362fa2](https://github.com/TMWare/jitsuyo/commit/2362fa2334a24de59ee0ab3d0d73e201a14c1949))
+* **deps-dev:** bump jest from 26.6.3 to 27.0.4 ([#87](https://github.com/TMWare/jitsuyo/issues/87)) ([1e48a8a](https://github.com/TMWare/jitsuyo/commit/1e48a8aa724ff1ab8b63c74005af9dd05475a5a2))
+* **deps-dev:** bump jest from 27.0.4 to 27.0.6 ([#101](https://github.com/TMWare/jitsuyo/issues/101)) ([cd1282b](https://github.com/TMWare/jitsuyo/commit/cd1282ba1e1ba2fe7cc61f69a63ef6ea5ba11129))
+* **deps-dev:** bump semantic-release from 17.4.2 to 17.4.3 ([#76](https://github.com/TMWare/jitsuyo/issues/76)) ([381ab28](https://github.com/TMWare/jitsuyo/commit/381ab281c622862e66d72f7672c7a58f053dd03f))
+* **deps-dev:** bump semantic-release from 17.4.3 to 17.4.4 ([#94](https://github.com/TMWare/jitsuyo/issues/94)) ([526180a](https://github.com/TMWare/jitsuyo/commit/526180a41f668e50fd004687b34ea51023d4a495))
+* **deps-dev:** bump typescript from 4.2.4 to 4.3.2 ([#83](https://github.com/TMWare/jitsuyo/issues/83)) ([c580040](https://github.com/TMWare/jitsuyo/commit/c580040a07d1ac4ca8129d2823dbbee8f988017d))
+* **deps-dev:** bump typescript from 4.3.2 to 4.3.5 ([#102](https://github.com/TMWare/jitsuyo/issues/102)) ([58c3686](https://github.com/TMWare/jitsuyo/commit/58c368654889cc046a2d9252bfb3165c07e1864f))
+* **dev:** use lint-staged and commitlint ([1bc56d3](https://github.com/TMWare/jitsuyo/commit/1bc56d3f3d704bc286f8abd7c2e588c046c810f0))
+* **merge:** bump all dependencies ([#111](https://github.com/TMWare/jitsuyo/issues/111)) ([63386bd](https://github.com/TMWare/jitsuyo/commit/63386bdf3cfd14078abc0f3ff2555e3a1cad33dc))
+* **prettier:** ignore changelog ([501fe01](https://github.com/TMWare/jitsuyo/commit/501fe01fbe33b3e593c616ddf58bea0c587b9d95))
+* remove empty templates ([68a8b76](https://github.com/TMWare/jitsuyo/commit/68a8b766d5e57aeeab6c67b9ccc0dc6504284801))
+
+
+### Continuous Integration
+
+* **release:** fix ci check in pre-commit hook ([#112](https://github.com/TMWare/jitsuyo/issues/112)) ([25aa17d](https://github.com/TMWare/jitsuyo/commit/25aa17df6e3e3d17de7e8ff31cb40e91d64b773e))
+
+
+### Miscellaneous
+
+* Merge branch 'master' into dev ([d742ff8](https://github.com/TMWare/jitsuyo/commit/d742ff8965a7263f3466bf86edf48b3f58bedaca))
+
+
+### Styles
+
+* apply style guidelines ([bf4b860](https://github.com/TMWare/jitsuyo/commit/bf4b8607bb1981a88d8c2dc5c328988a18080bae))
+
 ## [1.6.3](https://github.com/TMWare/jitsuyo/compare/v1.6.2...v1.6.3) (2021-06-14)
 
 
