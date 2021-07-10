@@ -49,7 +49,9 @@ export function eliminateSpecial (input: string): string {
  * // => 'Apartment Backing Consult'
  */
 export function resolveAcronym (acronym: string): string {
-  if (!optionals.acronymRes || optionals.acronymRes == null) throw new Error('optional peer dependency `acronymresolver` is needed for this')
+  if (!optionals.acronymRes || optionals.acronymRes == null) {
+    throw new Error('optional peer dependency `acronymresolver` is needed for this')
+  }
   return optionals.acronymRes(eliminateSpecial(acronym).replace(/_/g, ''))
 }
 
