@@ -1,3 +1,10 @@
+## [1.6.5](https://github.com/TMWare/jitsuyo/compare/v1.6.4...v1.6.5) (2021-07-23)
+
+
+### Bug Fixes
+
+* **validator:** remove extraneous regex character (had no effect) ([ec721cb](https://github.com/TMWare/jitsuyo/commit/ec721cb3860bfb09b87ca177c7f2306850506fc5))
+
 ## [1.6.4](https://github.com/TMWare/jitsuyo/compare/v1.6.3...v1.6.4) (2021-07-10)
 
 
