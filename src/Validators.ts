@@ -7,7 +7,7 @@ class Validators {
   /**
    * RegExp for URL validation
    */
-  public urlRegex: RegExp = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-z]{1,24}\/([-a-zA-Z0-9()@:%._\+~#?&//=]*)$/m
+  public urlRegex: RegExp = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-z]{1,24}\/([-a-zA-Z0-9()@:%._\+~#?&/=]*)$/m
   /**
    * RegExp for Discord emoji name validation
    */
