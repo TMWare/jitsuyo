@@ -3,7 +3,7 @@
   "extends": "@tmuniversal/ts/config",
   "compilerOptions": {
     "outDir": "./dist",
-    "target": "ESNEXT",
+    "target": "ES2018",
     "lib": ["ESNext"],
     "declaration": false,
     "inlineSources": false,
