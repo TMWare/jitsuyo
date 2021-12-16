@@ -1,16 +1,19 @@
 /// <reference path="../index.d.ts" />
 
-import validators from './Validators'
-import arrayHelper from './ArrayHelper'
-import stringHelper from './StringHelper'
+import ArrayHelper from './ArrayHelper'
+import StringHelper from './StringHelper'
+import Validators from './Validators'
 
 /**
  * All utility packaged
+ * @property {ArrayHelper} arrayHelper
+ * @property {StringHelper} stringHelper
+ * @property {Validators} validators
  */
 const util = {
-  validators,
-  arrayHelper,
-  stringHelper
+  validators: Validators,
+  arrayHelper: ArrayHelper,
+  stringHelper: StringHelper
 }
 
 module.exports = util
