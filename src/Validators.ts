@@ -7,7 +7,7 @@ class Validators {
   /**
    * RegExp for URL validation
    */
-  public urlRegex: RegExp = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-z]{1,24}\/([-a-zA-Z0-9()@:%._\+~#?&/=]*)$/m
+  public urlRegex: RegExp = /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-z]{1,24}\/([-a-zA-Z0-9()@:%._\+~#?&\/=]*)$/m
   /**
    * RegExp for Discord emoji name validation
    */
@@ -20,8 +20,7 @@ class Validators {
    * @returns {Boolean} wether the given string is a valid url
    */
   public isUrl (url: string): boolean {
-    if (!url) return false
-    return this.urlRegex.test(url)
+    return this.urlRegex.test(url ?? '')
   }
 
   /**
@@ -30,8 +29,7 @@ class Validators {
    * @returns {Boolean} wether the given string is a valid name for discord emojis
    */
   public isValidEmojiName (name: string): boolean {
-    if (!name) return false
-    return this.emojiRegex.test(name)
+    return this.emojiRegex.test(name ?? '')
   }
 
   /**
