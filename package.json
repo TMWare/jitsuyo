@@ -1,6 +1,6 @@
 {
   "name": "@tmware/jitsuyo",
-  "version": "1.6.6",
+  "version": "1.6.7",
   "description": "Utility package for tmware projects",
   "main": "index.js",
   "types": "dist/index.d.ts",

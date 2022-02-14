@@ -1,3 +1,24 @@
+## [1.6.7](https://github.com/TMWare/jitsuyo/compare/v1.6.6...v1.6.7) (2022-02-14)
+
+
+### Chores
+
+* **deps:** upgrade all dependencies ([9dbdfad](https://github.com/TMWare/jitsuyo/commit/9dbdfadcb0e32c805271e3cc9ffd15b8bc0228c1))
+* **dev-deps:** upgrade commitlint ([a3100ea](https://github.com/TMWare/jitsuyo/commit/a3100ea1e0df430a0d5297b3a57c0767b5436139))
+* **ts:** lock build target to es2018 ([91173f6](https://github.com/TMWare/jitsuyo/commit/91173f63a0d27a2c9423d86a8efad3e5162b59a6))
+
+
+### Code Refactoring
+
+* allow named exports ([93eec1a](https://github.com/TMWare/jitsuyo/commit/93eec1ac1dab34cbf9952799d0b072fcbbfa084c))
+* **validator:** simplify non-empty conditions ([49c03d9](https://github.com/TMWare/jitsuyo/commit/49c03d9f3afa3b5c2324d88938d6e7b225c1fc9f))
+* **validators:** clean up validators ([85ae350](https://github.com/TMWare/jitsuyo/commit/85ae350d87155a764814099da8a99c7d8249c4f9))
+
+
+### Documentation
+
+* **index:** add jsdoc property tags ([0802ccc](https://github.com/TMWare/jitsuyo/commit/0802ccc0d47644d09fb89328d5de1a2c29913771))
+
 ## [1.6.6](https://github.com/TMWare/jitsuyo/compare/v1.6.5...v1.6.6) (2022-02-14)
 
 
