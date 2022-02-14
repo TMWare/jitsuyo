@@ -1,8 +1,6 @@
-/// <reference path="../index.d.ts" />
-
-import ArrayHelper from './ArrayHelper'
-import StringHelper from './StringHelper'
-import Validators from './Validators'
+import arrayHelper from './ArrayHelper'
+import stringHelper from './StringHelper'
+import validators from './Validators'
 
 /**
  * All utility packaged
@@ -11,11 +9,17 @@ import Validators from './Validators'
  * @property {Validators} validators
  */
 const util = {
-  validators: Validators,
-  arrayHelper: ArrayHelper,
-  stringHelper: StringHelper
+  validators,
+  arrayHelper,
+  stringHelper
 }
 
-module.exports = util
+export default util
+export {
+  arrayHelper,
+  stringHelper,
+  validators
+}
+
 // // Allow use of default import syntax in TypeScript
 // module.exports.default = util
