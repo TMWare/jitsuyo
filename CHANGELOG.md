@@ -1,3 +1,26 @@
+## [1.6.6](https://github.com/TMWare/jitsuyo/compare/v1.6.5...v1.6.6) (2022-02-14)
+
+
+### Chores
+
+* **deps:** bump tar from 6.1.0 to 6.1.11 ([#148](https://github.com/TMWare/jitsuyo/issues/148)) ([d61804d](https://github.com/TMWare/jitsuyo/commit/d61804d64d6b353a657051cc7547b435a1b65d16))
+* **deps-dev:** bump @commitlint/cli from 13.0.0 to 13.1.0 ([#124](https://github.com/TMWare/jitsuyo/issues/124)) ([760ca08](https://github.com/TMWare/jitsuyo/commit/760ca08782e6ebf8fb40cdaea19c902eff609ddf))
+* **deps-dev:** bump @commitlint/config-conventional ([#122](https://github.com/TMWare/jitsuyo/issues/122)) ([e9cb584](https://github.com/TMWare/jitsuyo/commit/e9cb5843e0b37394fc0f6b2ebdf0fd751a9fe427))
+* **deps-dev:** bump @types/node from 16.3.1 to 16.7.10 ([#149](https://github.com/TMWare/jitsuyo/issues/149)) ([52af0bb](https://github.com/TMWare/jitsuyo/commit/52af0bb539a2fed90c7b17cc11b6b196d97810b4))
+* **deps-dev:** bump eslint from 7.30.0 to 7.32.0 ([#130](https://github.com/TMWare/jitsuyo/issues/130)) ([1baad5a](https://github.com/TMWare/jitsuyo/commit/1baad5a8f0135e582ffd08a7ecd459eb38cece6f))
+* **deps-dev:** bump eslint-plugin-jest from 24.3.6 to 24.4.0 ([#118](https://github.com/TMWare/jitsuyo/issues/118)) ([1fc26d5](https://github.com/TMWare/jitsuyo/commit/1fc26d5f9e8b9257cc897b1fd48efa3ba1c4513a))
+* **deps-dev:** bump husky from 7.0.1 to 7.0.2 ([#142](https://github.com/TMWare/jitsuyo/issues/142)) ([bcdf066](https://github.com/TMWare/jitsuyo/commit/bcdf066e19487f4bbe718865b9d8b2b8b0e1ece8))
+* **deps-dev:** bump jest from 27.0.6 to 27.1.0 ([#145](https://github.com/TMWare/jitsuyo/issues/145)) ([61e4ba4](https://github.com/TMWare/jitsuyo/commit/61e4ba49f463e8b70defb4c079d5dbc9db86506f))
+* **deps-dev:** bump lint-staged from 11.0.0 to 11.1.2 ([#133](https://github.com/TMWare/jitsuyo/issues/133)) ([b7a46f5](https://github.com/TMWare/jitsuyo/commit/b7a46f5be8d3dd8abfbb5213fa76a26d679042d1))
+* **deps-dev:** bump semantic-release from 17.4.4 to 17.4.7 ([#141](https://github.com/TMWare/jitsuyo/issues/141)) ([76cfc80](https://github.com/TMWare/jitsuyo/commit/76cfc80663db679c085ce013d7d30e069057b60d))
+* **deps-dev:** bump typescript from 4.3.5 to 4.4.2 ([#143](https://github.com/TMWare/jitsuyo/issues/143)) ([0e98548](https://github.com/TMWare/jitsuyo/commit/0e9854866f1dd3f216a5fcf1ecdaf5874e70db37))
+
+
+### Continuous Integration
+
+* **actions:** set node version to 16.x (lts) ([3392ed6](https://github.com/TMWare/jitsuyo/commit/3392ed6789aafc15d18563665b4af1e9c282ba43))
+* **dependabot:** disable automerge label ([f61027f](https://github.com/TMWare/jitsuyo/commit/f61027fb1061f0dfe34ddeabd4e67dea38c70bdc))
+
 ## [1.6.5](https://github.com/TMWare/jitsuyo/compare/v1.6.4...v1.6.5) (2021-07-23)
 
 
