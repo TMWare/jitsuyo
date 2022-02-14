@@ -3,14 +3,13 @@
   "version": "1.6.6",
   "description": "Utility package for tmware projects",
   "main": "index.js",
-  "types": "index.d.ts",
+  "types": "dist/index.d.ts",
   "exports": {
     "require": "./index.js",
     "import": "./index.esm.mjs"
   },
   "files": [
     "dist",
-    "index.d.ts",
     "index.js",
     "index.esm.mjs"
   ],

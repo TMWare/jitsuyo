@@ -3,12 +3,15 @@
   "extends": "@tmuniversal/ts/config",
   "compilerOptions": {
     "outDir": "./dist",
-    "target": "ES2018",
+    "target": "ES6",
     "lib": ["ESNext"],
-    "declaration": false,
+    "declaration": true,
     "inlineSources": false,
     "inlineSourceMap": false,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "pretty": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
