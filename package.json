@@ -71,7 +71,7 @@
     "@types/node": "^16.7.10",
     "acronymresolver": "^1.1.7",
     "eslint": "^7.32.0",
-    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-jest": "^26.1.3",
     "husky": "^7.0.2",
     "jest": "^27.1.0",
     "lint-staged": "^11.1.2",
