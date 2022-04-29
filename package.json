@@ -61,7 +61,7 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "^15.0.0",
+    "@commitlint/cli": "^16.2.4",
     "@commitlint/config-conventional": "^15.0.0",
     "@tmuniversal/ts": "^1.2.1",
     "@tmware/eslint-config": "^1.1.3",
